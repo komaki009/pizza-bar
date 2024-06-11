@@ -1,0 +1,20 @@
+.header{
+  height: 34vw;
+  margin: 30px auto;
+  background: url("/public/header.jpg") no-repeat;
+  background-size: 100%;
+  position: relative;
+  border-radius: 40px;
+}
+
+.header-contents{
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+.header-contents h2{
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw,22px);
+}
