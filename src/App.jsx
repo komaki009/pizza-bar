@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home"
 import Cart from "./pages/Cart/Cart"
 import Navbar from "./component/Navbar/Navbar"
 import FoodDetail from "./pages/FoodDetail/FoodDetail"
+import Footer from "./component/Footer/Footer"
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="food/:id" element={<FoodDetail />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

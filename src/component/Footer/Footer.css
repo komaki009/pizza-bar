@@ -1,0 +1,33 @@
+.footer{
+  width: 100%;
+  background-color: rgb(196, 191, 191);
+  margin-top: 60px;
+  color: white;
+  padding: 20px;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content-center li{
+  list-style: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.footer-img{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-img img{
+  cursor: pointer;
+}
+
+.footer p{
+  text-align: center;
+  margin-top: 20px;
+}
