@@ -2,13 +2,16 @@ import React, { useState } from "react"
 import "./Navbar.css"
 import logo from "../../assets/logo.png"
 import cartIcon from "../../assets/grocery-store.png"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
   const [menu, setMenu] = useState("all")
 
   return (
     <div className="navbar">
-      <img src={logo} alt="" className="logo" />
+      <Link to="/">
+        <img src={logo} alt="" className="logo" />
+      </Link>
       <ul className="navbar-menu">
         <li
           onClick={() => setMenu("all")}
@@ -37,7 +40,9 @@ const Navbar = () => {
       </ul>
       <div className="navbar-right">
         <div className="navbar-cart">
-          <img src={cartIcon} alt="" />
+          <Link to="/cart">
+            <img src={cartIcon} alt="" />
+          </Link>
           <div className="dot"></div>
         </div>
         <button>登入</button>

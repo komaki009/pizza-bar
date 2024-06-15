@@ -5,11 +5,13 @@ import Cart from "./pages/Cart/Cart"
 import Navbar from "./component/Navbar/Navbar"
 import FoodDetail from "./pages/FoodDetail/FoodDetail"
 import Footer from "./component/Footer/Footer"
+import ScrollToTop from "./component/ScrollToTop/ScrollToTop"
 
 const App = () => {
   return (
     <div className="app">
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
