@@ -1,6 +1,7 @@
 import React, { useContext } from "react"
 import "./FoodList.css"
 import { StoreContext } from "../../context/StoreContext"
+import { Link } from "react-router-dom"
 
 const FoodList = () => {
   const { foods } = useContext(StoreContext)
@@ -16,7 +17,9 @@ const FoodList = () => {
               <h4>{item.name}</h4>
               <p className="food-item-description">{item.description}</p>
               <p className="food-item-price">${item.price}</p>
-              <button>訂購</button>
+              <Link to={`/food/${item.id}`}>
+                <button>訂購</button>
+              </Link>
             </div>
           </div>
         ))}
