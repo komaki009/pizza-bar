@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom"
 
 const FoodDetail = () => {
   const { id } = useParams()
-  const { foods } = useContext(StoreContext)
+  const { foods, addToCart } = useContext(StoreContext)
   const food = foods.find((item) => item.id === parseInt(id))
   const [count, setCount] = useState(0)
 
@@ -16,6 +16,13 @@ const FoodDetail = () => {
   const handleReduce = () => {
     if (count > 0) {
       setCount(count - 1)
+    }
+  }
+
+  const handleAddToCart = () => {
+    if (count > 0) {
+      addToCart(food, count)
+      alert(`${food.name} 已添加到購物車，數量: ${count}`)
     }
   }
 
@@ -30,16 +37,12 @@ const FoodDetail = () => {
         <p className="food-detail-price">${food.price}</p>
         <p>選擇數量</p>
         <div className="food-detail-quantity">
-          <span className="reduce" onClick={handleReduce}>
-            -
-          </span>
-          <span>{count}</span>
-          <span className="plus" onClick={handlePlus}>
-            +
-          </span>
+          <span onClick={handleReduce}>-</span>
+          <p>{count}</p>
+          <span onClick={handlePlus}>+</span>
         </div>
         <div>
-          <button>新增餐點</button>
+          <button onClick={handleAddToCart}>新增餐點</button>
         </div>
       </div>
     </div>

@@ -1,11 +1,13 @@
-import React, { useState } from "react"
+import React, { useContext, useState } from "react"
 import "./Navbar.css"
 import logo from "../../assets/logo.png"
 import cartIcon from "../../assets/grocery-store.png"
 import { Link } from "react-router-dom"
+import { StoreContext } from "../../context/StoreContext"
 
 const Navbar = () => {
   const [menu, setMenu] = useState("all")
+  const { cart } = useContext(StoreContext)
 
   return (
     <div className="navbar">
@@ -43,7 +45,7 @@ const Navbar = () => {
           <Link to="/cart">
             <img src={cartIcon} alt="" />
           </Link>
-          <div className="dot"></div>
+          {cart.length > 0 && <div className="dot"></div>}
         </div>
         <button>登入</button>
       </div>

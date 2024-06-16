@@ -47,15 +47,7 @@
   gap: 20px;
 }
 
-.food-detail-quantity .reduce{
-  width: 20px;
-  height: 20px;
-  border: 1px solid black;
-  text-align: center;
-  cursor: pointer;
-}
-
-.food-detail-quantity .plus{
+.food-detail-quantity span{
   width: 20px;
   height: 20px;
   border: 1px solid black;
