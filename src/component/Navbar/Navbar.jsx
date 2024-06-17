@@ -5,7 +5,7 @@ import cartIcon from "../../assets/grocery-store.png"
 import { Link } from "react-router-dom"
 import { StoreContext } from "../../context/StoreContext"
 
-const Navbar = () => {
+const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("all")
   const { cart } = useContext(StoreContext)
 
@@ -47,7 +47,7 @@ const Navbar = () => {
           </Link>
           {cart.length > 0 && <div className="dot"></div>}
         </div>
-        <button>登入</button>
+        <button onClick={() => setShowLogin(true)}>登入</button>
       </div>
     </div>
   )
