@@ -31,3 +31,42 @@
   text-align: center;
   margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-content-left,
+  .footer-content-center,
+  .footer-content-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-content-center ul {
+    display: inline-block;
+  }
+
+  .footer-content-center li {
+    margin-top: 5px;
+  }
+
+  .footer-img{
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    gap: 10px;
+  }
+
+  .footer-content-left img,
+  .footer-img img {
+    width: 50px;
+  }
+}

@@ -1,10 +1,10 @@
 .header{
-  height: 34vw;
+  height: 30vw;
   margin: 30px auto;
   background: url("/public/header.jpg") no-repeat;
   background-size: 100%;
   position: relative;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 .header-contents{

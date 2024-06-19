@@ -49,3 +49,48 @@
 .food-item button:hover{
   background-color: #800000;
 }
+
+@media (max-width: 1024px) {
+  .food-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .food-item {
+    width: 100%;
+  }
+
+  .food-item-info {
+    padding: 15px;
+  }
+
+  .food-item-price {
+    font-size: 16px;
+  }
+
+  .food-item button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .food-list h2 {
+    font-size: 24px;
+  }
+
+  .food-item-info {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .food-item-price {
+    font-size: 14px;
+  }
+
+  .food-item button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
