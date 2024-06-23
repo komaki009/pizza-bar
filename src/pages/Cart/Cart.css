@@ -2,6 +2,11 @@
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  min-height: 80vh;
+}
+
+.cart-items{
+  height: 500px;
 }
 
 .cart-items-title{
@@ -56,6 +61,7 @@
   margin-top: 50px;
   text-align: center;
   color: #BC2626;
+  min-height: 80vh;
 }
 
 .total-price{
