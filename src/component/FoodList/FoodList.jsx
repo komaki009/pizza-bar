@@ -7,7 +7,7 @@ const FoodList = () => {
   const { foods } = useContext(StoreContext)
 
   return (
-    <div className="food-list">
+    <div className="food-list" id="food-list">
       <h2>選擇您的餐點</h2>
       <div className="food-list-content">
         {foods.map((item, index) => (

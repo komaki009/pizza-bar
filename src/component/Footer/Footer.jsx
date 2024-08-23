@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
           <Link to="/">
@@ -16,7 +16,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="footer-content-center">
-          <h3>關於Pizza Bar</h3>
+          <h3>關於我們</h3>
           <ul>
             <li>品牌故事</li>
             <li>連絡我們</li>

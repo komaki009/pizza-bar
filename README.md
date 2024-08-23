@@ -24,6 +24,8 @@ npm run dev
 
 React
 
-react router dom
+react-router-dom
+
+react-router-hash-link
 
 Vite

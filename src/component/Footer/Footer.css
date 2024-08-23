@@ -1,34 +1,47 @@
-.footer{
+.footer {
   width: 100%;
   background-color: rgb(196, 191, 191);
   margin-top: 60px;
   color: white;
   padding: 20px;
+  text-align: center;
 }
 
-.footer-content{
+.footer-content {
   display: flex;
   justify-content: space-between;
+  align-items: center; 
+  padding: 10px 0; 
 }
 
-.footer-content-center li{
+.footer-content > div {
+  flex: 1; /* 讓每個子容器均勻分佈空間 */
+  padding: 10px; /* 增加內邊距，使內容不緊貼邊緣 */
+}
+
+.footer-content-center ul {
   list-style: none;
+  padding: 0;
+  margin: 0 auto; /* 使列表項在中心 */
+}
+
+.footer-content-center li {
   margin-top: 10px;
   cursor: pointer;
 }
 
-.footer-img{
+.footer-img {
   display: flex;
+  justify-content: center; /* 使圖片居中對齊 */
   gap: 10px;
   margin-top: 10px;
 }
 
-.footer-img img{
+.footer-img img {
   cursor: pointer;
 }
 
-.footer p{
-  text-align: center;
+.footer p {
   margin-top: 20px;
 }
 
@@ -43,7 +56,6 @@
   .footer-content-center,
   .footer-content-right {
     width: 100%;
-    text-align: center;
   }
 
   .footer-content-center ul {
@@ -54,7 +66,7 @@
     margin-top: 5px;
   }
 
-  .footer-img{
+  .footer-img {
     width: 100%;
     justify-content: center;
   }
