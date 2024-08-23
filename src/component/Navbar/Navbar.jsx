@@ -22,13 +22,14 @@ const Navbar = ({ setShowLogin }) => {
         <img src={logo} alt="" className="logo" />
       </Link>
       <ul className="navbar-menu">
-        <Link
-          to="/"
+        <HashLink
+          smooth
+          to="/#"
           onClick={() => setMenu("all")}
           className={menu === "all" ? "active" : ""}
         >
           首頁
-        </Link>
+        </HashLink>
         <HashLink
           smooth
           to="/#food-list"
