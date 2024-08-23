@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  background-color: rgb(196, 191, 191);
+  background-color: rgb(110, 110, 110);
   margin-top: 60px;
   color: white;
   padding: 20px;
@@ -15,14 +15,14 @@
 }
 
 .footer-content > div {
-  flex: 1; /* 讓每個子容器均勻分佈空間 */
-  padding: 10px; /* 增加內邊距，使內容不緊貼邊緣 */
+  flex: 1; 
+  padding: 10px;
 }
 
 .footer-content-center ul {
   list-style: none;
   padding: 0;
-  margin: 0 auto; /* 使列表項在中心 */
+  margin: 0 auto;
 }
 
 .footer-content-center li {
@@ -32,7 +32,7 @@
 
 .footer-img {
   display: flex;
-  justify-content: center; /* 使圖片居中對齊 */
+  justify-content: center;
   gap: 10px;
   margin-top: 10px;
 }
